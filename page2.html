@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budžets</title>
+    <link rel="stylesheet" href="stils.css">
+</head>
+<body>
+    
+    <h1 style="font-size:3vw">Money Saving App</h1>
+<br><br><br><br><br><br>
+<div class="kods">
+    <form>
+      <label for="Sakratais">Jau sakrātais:</label>
+      <input type="number" id="Sakratais" name="Sakratais" style="font-size: 20px; height: 30px; width: 200px;">
+      <br><br>
+      <label for="Merkis">Mērķis kuru vēlies sakrāt:</label>
+      <input type="number" id="Merkis" name="Merkis" style="font-size: 20px; height: 30px; width: 200px;">
+      <br><br>
+      <label for="savings_rate">Cik daudz esat gatavi dienas laikā ietaupīt ?:</label>
+      <input type="number" id="savings_rate" name="savings_rate" style="font-size: 20px; height: 30px; width: 200px;">
+      <br><br>
+      <button style=" font-size: 25px; padding: 20px 30px;" id="button" type="button" onclick="calculateTimeToGoal()">Izrēķināt</button>
+    </form>
+    <br><br>
+    <div id="resultats">
+      Vaidzēs <span id="time_to_goal_Dienas">?</span> dienas vai
+      <span id="time_to_goal_Nedelas">?</span> nedēļas
+      <span id="time_to_goal_Menesus">?</span> mēnešus, lai sasniegtu tavu mērķi.
+    </div>
+  </body>
+  <script>
+    function calculateTimeToGoal() {
+      const Sakratais = parseFloat(document.querySelector("#Sakratais").value);
+      const Merkis = parseFloat(document.querySelector("#Merkis").value);
+      const savingsRate = parseFloat(document.querySelector("#savings_rate").value);
+      const timeToGoal = (Merkis - Sakratais) / savingsRate;
+      const timeToGoalDienas = timeToGoal.toFixed(2);
+      const timeToGoalNedelas = (timeToGoal / 7).toFixed(2);
+      const timeToGoalMenesus = (timeToGoal / 30).toFixed(2);
+      document.querySelector("#time_to_goal_Dienas").innerHTML = timeToGoalDienas;
+      document.querySelector("#time_to_goal_Nedelas").innerHTML = timeToGoalNedelas;
+      document.querySelector("#time_to_goal_Menesus").innerHTML = timeToGoalMenesus;
+    }
+  </script>
+</div>
+
+
+
+    <div id="footer">
+        <footer>
+            <h2><div id="current_date"></p></h2>
+                <script>
+                date = new Date().toLocaleDateString();
+                document.write(date);
+                </script>
+                <a href="https://www.unfpa.org/donate/Ukraine-a?form=UkraineAppeal&utm_source=google&utm_medium=cpc&utm_campaign=HO-UA-22-Ukraine&utm_content=EMERGENCIES&gclid=CjwKCAiAuOieBhAIEiwAgjCvcn7BuVDOZ8uSbBvnikps1mMr9Ggloh1cDINBOzsVIsW5MIuTThliFRoC1OEQAvD_BwE" target="_blank">
+                <div class="poga4">
+                    <button id="button">Palīdziet Ukrainai !</button>
+                    </div></a>
+                    <br><br>
+    
+                <div class="poga2">
+                    <button id="button" onclick="location.href='info.html'">Kontakti</button>
+                    </div>
+                    <div class="poga3">
+                        <button id="button" onclick="location.href='indeks.html'">Uz sākumu</button>
+                        </div>
+        <h3 style="text-align: right;">@pauls.prancans@svg.lv</h3>                
+          </footer></div>
+</body>
+</html>
