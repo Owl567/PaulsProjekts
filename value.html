@@ -9,32 +9,38 @@
 </head>
 <body>
 <h1>Valūtas pārveidotājs</h1>
-    <div class="dropdown">
-        <button class="dropbtn">Veidi</button>
-        <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        </div>
-      </div>
 
-      <div class="dropdown">
-        <button class="dropbtn">Veidi</button>
-        <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        </div>
-      </div>
+    <p>Ievadiet naudas summu kuru vēlieties pārveidot:</p>
+    <input type="number" id="amount" placeholder="Enter amount" />
 
-      <label for="nauda1"></label>
-      <input type="number" id="nauda1" name="nauda1" style="font-size: 20px; height: 30px; width: 200px;">
-      
-      <label for="nauda2"></label>
-      <input type="number" id="nauda2" name="nauda2" style="font-size: 20px; height: 30px; width: 200px;">
-      
+    <p>No:</p>
+    <select id="from-currency">
+      <option value="USD">US Dollar</option>
+      <option value="EUR">Euro</option>
+      <option value="GBP">British Pound</option>
+      <option value="BTC">Bitcoin</option>
+      <option value="ETH">Ethereum</option>
+    </select>
 
-<script src="value.js"></script>
+    <p>Uz:</p>
+    <select id="to-currency">
+      <option value="USD">US Dollar</option>
+      <option value="EUR">Euro</option>
+      <option value="GBP">British Pound</option>
+      <option value="BTC">Bitcoin</option>
+      <option value="ETH">Ethereum</option>
+    </select>
+
+    <br/><br/>
+    <button onclick="calculateExchangeRate()">Convert</button>
+
+    <p id="result"></p>
+    <script src="value.js"></script>
+  </body>
+</html>
+
+
+
     <div id="footer">
         <footer>
             <h2><div id="current_date"></p></h2>
