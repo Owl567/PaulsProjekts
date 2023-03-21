@@ -11,6 +11,7 @@
     
     <h1 style="font-size:3vw">Money Saving App</h1>
 <br><br><br><br><br><br>
+<script src="page2.js"></script>
 <div class="kods">
     <form>
       <label for="Sakratais">Jau sakrātais:</label>
@@ -31,20 +32,6 @@
       <span id="time_to_goal_Menesus">?</span> mēnešus, lai sasniegtu tavu mērķi.
     </div>
   </body>
-  <script>
-    function calculateTimeToGoal() {
-      const Sakratais = parseFloat(document.querySelector("#Sakratais").value);
-      const Merkis = parseFloat(document.querySelector("#Merkis").value);
-      const savingsRate = parseFloat(document.querySelector("#savings_rate").value);
-      const timeToGoal = (Merkis - Sakratais) / savingsRate;
-      const timeToGoalDienas = timeToGoal.toFixed(2);
-      const timeToGoalNedelas = (timeToGoal / 7).toFixed(2);
-      const timeToGoalMenesus = (timeToGoal / 30).toFixed(2);
-      document.querySelector("#time_to_goal_Dienas").innerHTML = timeToGoalDienas;
-      document.querySelector("#time_to_goal_Nedelas").innerHTML = timeToGoalNedelas;
-      document.querySelector("#time_to_goal_Menesus").innerHTML = timeToGoalMenesus;
-    }
-  </script>
 </div>
 
 
@@ -52,10 +39,7 @@
     <div id="footer">
         <footer>
             <h2><div id="current_date"></p></h2>
-                <script>
-                date = new Date().toLocaleDateString();
-                document.write(date);
-                </script>
+              <script src="time.js"></script>
                 <a href="https://www.unfpa.org/donate/Ukraine-a?form=UkraineAppeal&utm_source=google&utm_medium=cpc&utm_campaign=HO-UA-22-Ukraine&utm_content=EMERGENCIES&gclid=CjwKCAiAuOieBhAIEiwAgjCvcn7BuVDOZ8uSbBvnikps1mMr9Ggloh1cDINBOzsVIsW5MIuTThliFRoC1OEQAvD_BwE" target="_blank">
                 <div class="poga4">
                     <button id="button">Palīdziet Ukrainai !</button>
