@@ -8,33 +8,33 @@
     <link rel="stylesheet" href="stils.css">
 </head>
 <body>
-<h1>Valūtas pārveidotājs</h1>
-
+<h1 style="font-size:3vw">Valūtas pārveidotājs</h1>
+    <div class="parveidotajs">
     <p>Ievadiet naudas summu kuru vēlieties pārveidot:</p>
-    <input type="number" id="amount" placeholder="Enter amount" />
-
+    <input type="number" id="amount" placeholder="Ievadiet daudzumu" />
+<br>
     <p>No:</p>
     <select id="from-currency">
-      <option value="USD">US Dollar</option>
+      <option value="USD">ASV Dolāriem</option>
       <option value="EUR">Euro</option>
-      <option value="GBP">British Pound</option>
+      <option value="GBP">Britu mārciņām</option>
       <option value="BTC">Bitcoin</option>
       <option value="ETH">Ethereum</option>
     </select>
-
+<br>
     <p>Uz:</p>
     <select id="to-currency">
-      <option value="USD">US Dollar</option>
+      <option value="USD">ASV Dolāriem</option>
       <option value="EUR">Euro</option>
-      <option value="GBP">British Pound</option>
+      <option value="GBP">Britu mārciņām</option>
       <option value="BTC">Bitcoin</option>
       <option value="ETH">Ethereum</option>
     </select>
 
-    <br/><br/>
-    <button onclick="calculateExchangeRate()">Convert</button>
+    <br/><br/><br>
+    <button id="button" onclick="calculateExchangeRate()">Pārveidot</button>
 
-    <p id="result"></p>
+    <p id="result"></p></div>
     <script src="value.js"></script>
   </body>
 </html>

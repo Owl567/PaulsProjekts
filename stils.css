@@ -86,3 +86,27 @@ footer {
     font-family: fantasy;
     font-size: 25px;
 }
+
+.rek1{
+    font-size: 23px;
+    height: 30px;
+    width: 250px;
+    margin-left: 43%;
+}
+
+#resultats{
+margin-top: 19%;
+}
+
+.parveidotajs{
+    color:#05386B ;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 26px;
+    margin-top: 7%;
+}
+
+.img3{
+    float: left;
+    size: 10%;   
+}
