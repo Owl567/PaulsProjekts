@@ -10,12 +10,12 @@ function fetchExchangeRates() {
   }
 
   function calculateExchangeRate() {
-    const amount = parseFloat(document.getElementById("amount").value);
-    const fromCurrency = document.getElementById("from-currency").value;
-    const toCurrency = document.getElementById("to-currency").value;
+    const daudzum = parseFloat(document.getElementById("daudzum").value);
+    const No = document.getElementById("No").value;
+    const Uz = document.getElementById("Uz").value;
     const exchangeRates = fetchExchangeRates();
-    const rate = exchangeRates[toCurrency] / exchangeRates[fromCurrency];
-    const result = (amount * rate).toFixed(2);
+    const rate = exchangeRates[Uz] / exchangeRates[No];
+    const result = (daudzum * rate).toFixed(2);
     document.getElementById("result").innerHTML =
-      amount + " " + fromCurrency + " = " + result + " " + toCurrency;
+    daudzum + " " + No + " = " + result + " " + Uz;
   }
