@@ -130,3 +130,23 @@ height: 350px;
     margin-right: 30px;
     margin-top: 10px;
 }
+
+
+    select {
+        appearance: none;
+        border: 0;
+        outline: 0;
+        font: inherit;
+        width: 16%;
+        height: 20%;
+        padding:0 20px 0 20px;
+        background: #379683 ;
+        color: #05386B;
+        border-radius: 0.25em;
+        box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        text-align: center;
+       
+    }
+
+    

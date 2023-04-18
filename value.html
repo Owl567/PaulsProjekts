@@ -11,10 +11,12 @@
 <div class="bilde"><img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/800px-Bitcoin.svg.png"></div>
 
 <h1 style="font-size:3vw">Valūtas pārveidotājs</h1>
+
     <div class="parveidotajs">
     <p>Ievadiet naudas summu kuru vēlieties pārveidot:</p>
     <input type="number" id="daudzum" placeholder="Ievadiet daudzumu" />
 <br>
+<div class="box">
     <p>No:</p>
     <select id="No">
       <option value="USD">ASV Dolāriem</option>
@@ -23,15 +25,15 @@
       <option value="BTC">Bitcoin</option>
       <option value="ETH">Ethereum</option>
     </select>
-<br>
+<br><br>
     <p>Uz:</p>
-    <select id="Uz">
+    <select id="select">
       <option value="USD">ASV Dolāriem</option>
       <option value="EUR">Euro</option>
       <option value="GBP">Britu mārciņām</option>
       <option value="BTC">Bitcoin</option>
       <option value="ETH">Ethereum</option>
-    </select>
+    </select></div>
 
     <br/><br/><br>
     <button id="button" onclick="calculateExchangeRate()">Pārveidot</button>
