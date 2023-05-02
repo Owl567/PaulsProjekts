@@ -14,11 +14,11 @@
 
     <div class="parveidotajs">
     <p>Ievadiet naudas summu kuru vēlieties pārveidot:</p>
-    <input type="number" id="daudzum" placeholder="Ievadiet daudzumu" />
+    <input type="number" id="amount" placeholder="Ievadiet daudzumu €"/> 
 <br>
 <div class="box">
     <p>No:</p>
-    <select id="No">
+    <select id="from-currency">
       <option value="USD">ASV Dolāriem</option>
       <option value="EUR">Euro</option>
       <option value="GBP">Britu mārciņām</option>
@@ -27,7 +27,7 @@
     </select>
 <br><br>
     <p>Uz:</p>
-    <select id="select">
+    <select id="to-currency">
       <option value="USD">ASV Dolāriem</option>
       <option value="EUR">Euro</option>
       <option value="GBP">Britu mārciņām</option>
@@ -35,7 +35,7 @@
       <option value="ETH">Ethereum</option>
     </select></div>
 
-    <br/><br/><br>
+    <br/><br/>
     <button id="button" onclick="calculateExchangeRate()">Pārveidot</button>
 
     <p id="result"></p></div>
